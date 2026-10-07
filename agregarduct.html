@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar productos y totalizar</title>
+</head>
+<body>
+    <script>
+        // let precio;
+        // let cant;
+        // let total;
+        // let opc;
+        let total=0;
+        let item=0;
+        let opc;
+        do{
+            let precio=parseFloat(prompt("Precio:"));
+            let cant=parseInt(prompt("Cantidad:"));
+            let subtotal=cant*precio;
+            opc=prompt("¿Agregar otro producto?");
+            total=total+subtotal;//Acumuladora
+            item=item+1;//Contadora
+        }
+        while(opc=="SI"||opc=="si")
+        document.write("Cantidad de items es :",item,"<br>");
+        document.write("Total a pagar es : $",total,"<br>");
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automatico</title>
+</head>
+<body>
+    <script>
+        let saldo=500000;
+        let opcion=0;
+        while(opcion!=4){
+            opcion=parseInt(prompt("Bienvenido al cajero. Elija una opcion:\n1.Consultar saldo\n2. Retirar dinero\n3. Consinar dinero\n4. Salir"));
+        switch(opcion){
+            case 1:
+                alert("Su saldo actual es: $ "+ saldo);
+                break;
+            case 2:
+                let retiro=parseInt(prompt("Ingrese el valor exacto que desea retirar "));
+                if(retiro<=saldo){
+                saldo=saldo-retiro;
+                 alert("Su saldo actual despues de retirar es: $ "+ saldo);
+                }else 
+                 alert("La cantidad es mayor a los fondos");
+                break;
+            case 3:
+                let deposito=parseInt(prompt("Ingrese el valor de desea depositar"));
+                saldo=saldo+deposito;
+                 alert("Consinacion existosa. Su saldo total es: $ "+ saldo);
+            case 4:
+                alert("!Gracias por utilizar nuestros servicios. Hasta pronto¡");
+            default:
+                alert("Opcion no valida. Intente nuevamente");
+        }
+
+        }
+    </script>
+</body>
+</html>

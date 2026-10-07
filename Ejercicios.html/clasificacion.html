@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     let name=prompt("Ingrese nombre del empleado");
+    document.write("Nombre del empleado:"+name,"<br>");
+    let experiencia=parseInt(prompt("Ingrese los años de experiencia que tiene"));
+    document.write("Años de experiencia:"+experiencia,"<br>");
+    let puntaje=parseFloat(prompt("Ingrese el puntaje de evaluacion(0-100)"));
+    document.write("Puntaje:"+puntaje,"<br>");
+    let categoria="";
+    if (experiencia>=5){
+    //categoria de mas de 5 años
+    if (puntaje>=90){
+       categoria="Excelente";
+    }
+    else if (puntaje >=75 && puntaje <=89){
+       categoria="Muy bueno";
+    }
+     else {
+        categoria="Bueno";
+     }
+    //categoria de menos de 5 años
+    
+    }else{
+    if (puntaje>=90){
+      categoria="Prometedor";
+    }
+    else if(puntaje >=75 && puntaje<=89){
+        categoria="En desarrollo";
+    }
+    else {
+        categoria="Requiere capacitacion ";
+    }
+    }
+    
+    document.write("categoria:"+categoria,"<br>");
+
+    
+   </script> 
+</body>
+</html>

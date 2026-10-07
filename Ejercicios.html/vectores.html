@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectores</title>
+</head>
+<body>
+    <script>
+        //Declarar vectores
+        let aprendices=["Andrea","Juan Carlos","Valentina","Lucia","Santiago"];
+        document.write(aprendices.join(" | ")+"<br>");
+        document.write(aprendices.length+"<br>");
+        document.write(aprendices[0]+"<br>");
+        //Agregar un elemento al final del vector
+        aprendices[5]="Camilo";
+        document.write(aprendices.join(" - ")+"<br>");
+        aprendices.push("Tatiana","Yorman","Yusy","Kilian");
+        document.write(aprendices.join(" | ")+"<br>");
+        // //Llenar vector dinamico
+        // let guerreras=[]; //Declarar vector vacio
+        // for(i=o;i<=10;i++){
+        //     let guerrera=prompot("Ingresa el nombre de la guerrera");
+        //     guerreras.push(guerrera);//Agrega nuevo valor al final
+        // }
+        //  document.write(guerreras.join(" - "));
+        // //Ordenar alfabeticaamente A-Z
+        // let ordenar=aprendices.sort();
+        // document.write(ordenar);
+        // //Ordenar en reversa
+        // document.write(aprendices.reverse());
+
+        //Ordenar de la Z-A
+        document.write(aprendices.sort().reverse());
+        
+        let numeros=[1,40,6,7,9,10,25,65];
+        document.write("original:"+numeros.join("-")+"<br>");
+
+        //Ordenar Ascendentemente mayor a menor
+        numeros.sort(function(a,b){return a-b});
+        document.write("Menro-Mayor:"+numeros.join("-")+"<br>");
+
+        
+        //Ordenar decendentemente menor a mayor
+        numeros.sort(function(b,a){return b-a});
+        document.write("Mayor-Menor:"+numeros.join("-")+"<br>");
+        
+
+    </script>
+</body>
+</html>

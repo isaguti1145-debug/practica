@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRUVER</title>
+</head>
+<body>
+    <script>
+        let total;
+        let items;
+        let opc;
+        do{
+            let precio=parseFloat(prompt("Precio:"));
+            let subtotal=cant*precio;
+            opc=prompt("MENU DE OPCION\nIngresa de opcion\n 1.Manzanas\n 2.Banano\n 3.Naranja\n 4. Terminar compra")
+            total=total+subtotal;//Acumuladora
+            item=item+1;//Contadora
+        }while(opc!=4);
+        document.write("Gracias por su compra");
+    </script>
+</body>
+</html>

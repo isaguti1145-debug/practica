@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de gastos</title>
+</head>
+<body>
+    <script>
+        let gasto=parseFloat(prompt("Ingrese el valor del gasto"));
+        let cont=0;
+        let total=0;
+        let prom=0;
+        while(gasto>0){
+            total=total+gasto;
+            cont=cont+1;
+            gasto=parseFloat(prompt("Ingrese el valor del gasto"));
+        }
+        if(cont>0){
+            prom=total/cont;
+        }
+        document.write("La cantidad total de gastos resgistrados: ",cont,"<br>");
+        document.write("El valor total gastado: $ ",total,"<br>");
+        document.write("El promedio de los gastos: ",prom,"<br>");
+    </script>
+</body>
+</html>
